@@ -1,0 +1,102 @@
+html, body{
+    margin:0;
+}
+
+body{
+    color:#e84393;
+    background-color:#5f27cd;
+}
+
+main{
+    background-color: #fff;
+    width: 50vw;
+    height:70vh;
+    margin:  50px auto;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 3px 1px 10px  2px #000;
+}
+
+h1{
+   
+    font-weight:900;
+    padding-top:40px;
+}
+
+#add{
+    font-weight:bold;
+    color: #e84393;;
+    background-color:#5f27cd;
+    border: 2px solid #5f27cd;
+    border-radius: 5px;
+}
+
+#add:hover{
+    background-color:#fff;
+    cursor: pointer;
+    
+}
+
+input{
+    color: #5f27cd;
+   
+}
+input:focus{
+   outline-color:#e84393;
+   caret-color: #5f27cd;
+}
+
+
+ul{
+    width: 70vw;
+    margin: 20px auto 0px 50px;
+    text-align:left;
+    padding-left: 0;
+    list-style: none;
+    font-size: 20px;
+   
+}
+
+ul li::before {
+    content: "\2022";
+    color: #5f27cd;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+.remove{
+    color: #5f27cd;
+    text-decoration: line-through;
+    
+}
+
+.delete{
+    background-color:#D500F9;
+    border: 1px solid #D500F9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0px 2px;
+    margin-left: 5px;
+    
+}
+.delete:hover{
+    cursor: pointer;
+}
+
+@media( max-width:440px){
+    #add{
+        margin-top: 10px;
+    }
+
+    main{
+        overflow-x: hidden;
+    }
+
+}
+
